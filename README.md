@@ -9,20 +9,19 @@ A full-stack, responsive AI video creation workspace combining Seedance generati
 
 ## Get the full source
 
-The complete application source is packaged as an XZ-compressed tar archive in six text-safe GitHub parts under `release/parts/`. Run the assembly script to reconstruct it:
+The complete application source is directly downloadable as [`release/studioarena-source.tar.xz`](./release/studioarena-source.tar.xz). You can download that archive from this branch, or clone the branch and extract it:
 
 ```bash
 git clone --branch CHATGPT https://github.com/fadilp5x/STUDIOARENA.git
 cd STUDIOARENA
-sh release/assemble.sh
-tar -xJf studioarena-source.tar.xz
+tar -xJf release/studioarena-source.tar.xz
 cd studioarena
 cp .env.example .env
 npm install
 npm run dev
 ```
 
-The assembly script downloads six base64 parts from this branch, joins and decodes them, then verifies the resulting XZ archive. It does not need any application API key.
+An optional assembly script and six text-safe archive parts remain under `release/` as a fallback. Reconstruct the archive with `sh release/assemble.sh` if needed. Neither method requires an application API key.
 
 ## Features in this delivery
 
